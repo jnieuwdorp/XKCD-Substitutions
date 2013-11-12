@@ -1,0 +1,14 @@
+{
+        "manifest_version": 1,
+        "name": "XKCD-Substitutions",
+        "version": "0.1",
+        "description": "In hommage to xkcd: Substitutions, it substitutes words to make reading the news more fun",
+        "content_scripts": 
+        [
+                {
+                        "matches": ["*://*/*"],
+                        "js": ["content_script.js"],
+                        "run_at": "document_end"
+                }
+        ]
+}
